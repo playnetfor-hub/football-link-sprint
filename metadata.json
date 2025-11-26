@@ -1,0 +1,5 @@
+{
+  "name": "Football Link Sprint",
+  "description": "A fast-paced football trivia game where you find the missing player connecting two random entities (Teams, Coaches, Trophies, etc.).",
+  "requestFramePermissions": []
+}

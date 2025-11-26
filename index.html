@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/icons/brain-circuit.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sprint Football</title>
+    
+    <!-- Google Fonts: Cairo for Arabic support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Cairo', 'sans-serif'],
+            },
+            animation: {
+              tilt: 'tilt 10s infinite linear',
+            },
+            keyframes: {
+              tilt: {
+                '0%, 50%, 100%': {
+                  transform: 'rotate(0deg)',
+                },
+                '25%': {
+                  transform: 'rotate(0.5deg)',
+                },
+                '75%': {
+                  transform: 'rotate(-0.5deg)',
+                },
+              },
+            },
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        background-color: #020617; /* slate-950 */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
